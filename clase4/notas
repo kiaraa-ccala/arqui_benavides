@@ -1,0 +1,32 @@
+si solo tengo una direccion ip como hago para correr multiples cosas en una pc?
+
+Se puede correr multiples de servidores a una PC
+
+
+Como diferencio?
+Por el puerto :D
+Agrupar el puerto + direccion IP = socket 
+
+ip : ruta de envio 
+puerto : salidas a la carretera, c/u de los puertos que esten ahi 
+
+socket = IP + puerto 
+en vez de IP puede ser una URL 
+
+IP < conjunto de ocho octetos 
+dominio < URL
+
+la URL se le puede asignar a una IP, estan asociadas a la DNS, pero no son lo mismo. Si fueran lo mismo no se necesitaria una DNS
+
+Nunca usaremos URLs, todo será con IPs. 
+
+Socket: recurso para poder cambiar informacion entre servidor y cliente. Se traduce a una version equivalente en codigo para nosotros se trabaja con un cliente por un lado y por el otro, un servidor. 
+
+(echo cliente)                             (echo server)
+CLIENTE           abro socket>>              SERVIDOR
+                <<< ack
+                req: "hola mundo" >>>>
+                <<< resp: "hola mundo"
+
+                cierro socket >>>>
+
